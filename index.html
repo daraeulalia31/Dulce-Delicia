@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Web Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">  <!-- Navbar -->  <header class="bg-gray-800 text-white">
+    <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Mi Sitio</h1>
+      <ul class="flex space-x-4 mt-2 md:mt-0">
+        <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+        <li><a href="#servicios" class="hover:underline">Servicios</a></li>
+        <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>  <!-- Inicio -->  <section id="inicio" class="text-center py-12 px-4">
+    <h2 class="text-3xl font-bold mb-4">Bienvenido a Mi Página</h2>
+    <img src="pngtree-girl-holding-a-placard-to-welcome-png-image_3879700.jpg" alt="Imagen de portada" class="mx-auto rounded-lg shadow-lg w-full max-w-xl mb-4">
+    <p class="text-gray-700">Esta es una página web de ejemplo para demostrar el uso de Tailwind CSS.</p>
+  </section>  <!-- Servicios -->  <section id="servicios" class="bg-gray-100 py-12 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-8">Servicios</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition-transform">
+        <h3 class="text-xl font-semibold mb-2">Diseño Web</h3>
+        <p>Creación de sitios web modernos y responsivos.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition-transform">
+        <h3 class="text-xl font-semibold mb-2">Desarrollo</h3>
+        <p>Aplicaciones web a medida usando tecnologías actuales.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition-transform">
+        <h3 class="text-xl font-semibold mb-2">Consultoría</h3>
+        <p>Asesoría en proyectos digitales y transformación digital.</p>
+      </div>
+    </div>
+  </section>  <!-- Contacto -->  <section id="contacto" class="py-12 px-4 bg-blue-50">
+    <h2 class="text-3xl font-bold text-center mb-8">Contacto</h2>
+    <form class="max-w-xl mx-auto flex flex-col gap-4">
+      <input type="text" placeholder="Nombre" required class="p-3 border border-gray-300 rounded">
+      <input type="email" placeholder="Correo electrónico" required class="p-3 border border-gray-300 rounded">
+      <textarea placeholder="Mensaje" required class="p-3 border border-gray-300 rounded"></textarea>
+      <button type="submit" class="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition">Enviar</button>
+    </form>
+  </section>  <!-- Footer -->  <footer class="bg-gray-900 text-white text-center py-4">
+    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    <div class="mt-2">
+      <a href="#" class="text-gray-300 hover:text-white mx-1">Facebook</a>|
+      <a href="#" class="text-gray-300 hover:text-white mx-1">Twitter</a>|
+      <a href="#" class="text-gray-300 hover:text-white mx-1">Instagram</a>
+    </div>
+  </footer></body>
+</html>
